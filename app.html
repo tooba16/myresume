@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Static</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="red">
+        <img src="./Screenshot (100).png"> 
+
+           <h3 class="bold">Carrer objective</h3>
+           <span >Seeking an entry level web <br>browser position to leverage<br> my technical skills and position <br>for creating
+            innovative web<br> solution. Eager to contribute to <br>a dynamic team  and learn <br>from experienced professional.
+           </span>
+
+           <h3 class="bold">Certificate</h3>
+           <span>Responsive Web Developement</span><br>
+           <span>Typescript Variable</span><br>
+           <span>Advance Typescript</span> <br/>
+    </div> 
+    
+     <div class="yellow"> 
+        <h1>Static Resume</h1>
+        <h2>Personal Information</h2>
+        <span class="bold">Name:</span>
+        <span>Sumbul Naz</span><br />
+        
+        <span class="bold">Mobile Number:</span>
+        <span>03131027033</span><br />
+        
+        <span class="bold">Email:</span>
+        <span>akhtarmehnaz@gmail.com</span><br />
+        
+        <span class="bold">LinkedIn Profile:</span>
+        <span>abclinked.com</span><br />
+
+        <h2>Education</h2>
+        <span class="bold">Matric:</span>
+        <span>abc school</span><br />
+        
+        <span class="bold">Intermediate:</span>
+        <span>abc college</span><br />
+
+        <span class="bold">Graduation:</span>
+        <span>abc university</span><br />
+
+        <h2>Skills</h2>
+        <span>The ability to ensure your website and applications work seamlessly across different browsers and 
+        devices. This includes understanding browser quirks, using responsive design principles, and testing for 
+        compatibility.</span>
+
+        <h2>Work Experience</h2>
+
+        
+        <!-- Work experience content to be toggled -->
+        <div id="work-experience" style="display: none;">
+            <span>Two years experience in front-end development at Tech Dynamos</span><br />
+            <span>Typescript Expert work at company name</span><br />
+        </div>
+         <!-- Two buttons for hide and show -->
+         <button id="show-btn" onclick="showWorkExperience()">Show Work Experience</button>
+         <button id="hide-btn" onclick="hideWorkExperience()" style="display: none;">Hide Work Experience</button>
+         
+    </div>
+
+    <script>
+        function showWorkExperience() {
+            var workExperience = document.getElementById("work-experience");
+            var showButton = document.getElementById("show-btn");
+            var hideButton = document.getElementById("hide-btn");
+
+            workExperience.style.display = "block";
+            showButton.style.display = "none";
+            hideButton.style.display = "inline";
+        }
+
+        function hideWorkExperience() {
+            var workExperience = document.getElementById("work-experience");
+            var showButton = document.getElementById("show-btn");
+            var hideButton = document.getElementById("hide-btn");
+
+            workExperience.style.display = "none";
+            showButton.style.display = "inline";
+            hideButton.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<
